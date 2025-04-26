@@ -12,28 +12,28 @@
 
 <!-- Sidebar -->
 <aside id="sidebar"
-    class="bg-white w-64 p-4 shadow-md absolute md:relative md:translate-x-0 -translate-x-full transition-transform duration-300 z-50 h-full md:h-auto md:block hidden md:flex flex-col">
+    class="bg-gradient-to-l from-cyan-500 to-blue-500 w-64 p-4 shadow-md absolute md:relative md:translate-x-0 -translate-x-full transition-transform duration-300 z-50 h-full md:h-auto md:block hidden md:flex flex-col">
     <h2 class="text-2xl font-bold mb-4 hidden md:block">Admin</h2>
     <nav class="flex flex-col space-y-4">
         <a href="{{ route('admin.dashboard') }}"
-            class="flex items-center px-4 py-2 rounded hover:bg-gray-200 {{ request()->routeIs('admin.dashboard') ? 'bg-gray-300 font-semibold' : '' }}">
+            class="flex items-center px-4 py-2 rounded hover:bg-white {{ request()->routeIs('admin.dashboard') ? 'bg-white font-semibold' : '' }}">
             <span class="material-icons mr-2">dashboard</span> Dashboard
         </a>
 
         <a href="{{ route('courses.index') }}"
-            class="flex items-center px-4 py-2 rounded hover:bg-gray-200 {{ request()->routeIs('courses.*') ? 'bg-gray-300 font-semibold' : '' }}">
+            class="flex items-center px-4 py-2 rounded hover:bg-white {{ request()->routeIs('courses.*') ? 'bg-white font-semibold' : '' }}">
             <span class="material-icons mr-2">menu_book</span> Courses
         </a>
 
         <a href="{{ route('events.index') }}"
-            class="flex items-center px-4 py-2 rounded hover:bg-gray-200 {{ request()->routeIs('events.*') ? 'bg-gray-300 font-semibold' : '' }}">
+            class="flex items-center px-4 py-2 rounded hover:bg-white {{ request()->routeIs('events.*') ? 'bg-white font-semibold' : '' }}">
             <span class="material-icons mr-2">event</span> Events
         </a>
 
         <form method="POST" action="{{ route('logout') }}" class="mt-6">
             @csrf
             <button type="submit"
-                class="flex items-center w-full text-left px-4 py-2 rounded hover:bg-gray-200 text-red-500">
+                class="flex items-center w-full text-left px-4 py-2 rounded hover:bg-white text-black">
                 <span class="material-icons mr-2">logout</span> Logout
             </button>
         </form>

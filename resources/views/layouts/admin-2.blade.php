@@ -16,7 +16,7 @@
         <div class="flex-1 flex flex-col">
             @include('components.admin.header')
 
-            <main class="flex-1 p-4">
+            <main class="flex-1 p-4 bg-gradient-to-r from-cyan-500 to-blue-500">
                 @yield('content')
             </main>
 
