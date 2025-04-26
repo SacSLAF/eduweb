@@ -8,8 +8,11 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\HomeController;
 
 
+//Public web routes (Not protected)
 // Route::get('/', [CourseController::class, 'course_view'])->name('home');
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/course/{slug}', [CourseController::class, 'course_single_view'])->name('course.view');
+
 
 // Auth Routes
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

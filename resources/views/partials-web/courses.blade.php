@@ -19,7 +19,7 @@
                             {{-- <img src="{{ asset('storage/' . $course->image) }}" alt="{{ $course->title }}" /> --}}
                             <img src="{{ asset($course->image) }}" alt="{{ $course->title }}" />
                             {{-- <img src="{{ asset('assets/img/course/01.jpg') }}" alt="{{ $course->title }}"> --}}
-                            <a href="{{ route('courses.index', $course->id) }}" class="btn"><i class="far fa-link"></i></a>
+                            <a href="{{ route('course.view', $course->slug) }}" class="btn"><i class="far fa-link"></i></a>
                         </div>
                         <div class="course-content">
                             <div class="course-meta">
@@ -32,7 +32,7 @@
                                 </div>
                             </div>
                             <h4 class="course-title">
-                                <a href="{{ route('courses.index', $course->id) }}">{{ $course->title }}</a>
+                                <a href="{{ route('course.view', $course->slug) }}">{{ $course->title }}</a>
                             </h4>
                             <p class="course-text">
                                 {{ Str::limit($course->description, 100) }}

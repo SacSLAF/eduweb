@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
 
     <!-- title -->
-    <title>@yield('title', 'Eduka - School, College, University And Courses')</title>
+    <title>@yield('title', 'HSD Institute Management')</title>
 
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/logo/favicon.png') }}">

@@ -6410,5 +6410,15 @@ label {
   opacity: .95;
 }
 
+/* single course page - image  */
+.course-image {
+  object-fit: cover; /* Crop the image to cover the area while maintaining its aspect ratio */
+  border-radius: 5px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
 
+.course-image:hover {
+  transform: scale(1.03); /* Slight zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow effect */
+}
 

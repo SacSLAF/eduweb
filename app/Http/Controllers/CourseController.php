@@ -17,6 +17,12 @@ class CourseController extends Controller
         $courses = Course::all();
         return view('home', compact('courses'));
     }
+    public function course_single_view($slug)
+    {
+        $course = Course::where('slug', $slug)->firstOrFail();
+        // $course = Course::findOrFail($id);
+        return view('course-single', compact('course'));
+    }
 
     public function create()
     {

@@ -1,5 +1,5 @@
 <footer class="bg-gradient-to-r from-cyan-500 to-blue-500 shadow-inner p-4 text-center text-sm text-white">
-    &copy; {{ date('Y') }} EduWeb. All rights reserved.
+    &copy; {{ date('Y') }} HSD Institute Management. All rights reserved.
 </footer>
 
 

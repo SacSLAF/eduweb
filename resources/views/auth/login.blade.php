@@ -8,7 +8,7 @@
 </head>
 <body class="flex items-center justify-center min-h-screen bg-gray-100">
     <div class="bg-gradient-to-r from-cyan-500 to-blue-500 w-full max-w-md p-6 rounded-lg shadow-md">
-        <h2 class="text-2xl font-bold mb-4 text-center">Edu Web Admin Login</h2>
+        <h2 class="text-2xl font-bold mb-4 text-center">HSD Institute Admin Login</h2>
 
         @if(session('error'))
             <div class="bg-red-100 text-red-700 px-4 py-2 rounded mb-4">
