@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CourseController;
@@ -17,9 +18,10 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Admin Routes (Protected)
 Route::middleware('auth')->prefix('admin')->group(function () {
-    Route::get('/dashboard', function () {
-        return view('admin.dashboard');
-    })->name('admin.dashboard');
+    // Route::get('/dashboard', function () {
+    //     return view('admin.dashboard');
+    // })->name('admin.dashboard');
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 
     // Course Routes
     Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');

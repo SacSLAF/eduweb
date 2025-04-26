@@ -18,7 +18,7 @@
                     <p class="text-gray-500">Manage all available courses</p>
                 </div>
             </div>
-            <div class="text-3xl font-semibold text-gray-800 mb-4">15</div> <!-- Example Stats -->
+            <div class="text-3xl font-semibold text-gray-800 mb-4">{{ $coursesCount }}</div>
             <a href="{{ route('courses.index') }}" class="text-blue-600 font-medium hover:underline">View Courses →</a>
         </div>
 
