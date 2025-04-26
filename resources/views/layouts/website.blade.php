@@ -39,7 +39,7 @@
     <!-- preloader end -->
 
     <!-- header area -->
-    @include('partials.header')
+    @include('partials-web.header')
 
     <!-- main content -->
     <main>
@@ -47,7 +47,7 @@
     </main>
 
     <!-- footer area -->
-    @include('partials.footer')
+    @include('partials-web.footer')
 
 
     <!-- Cloudflare Email Decoder (usually this is external, not stored locally) -->

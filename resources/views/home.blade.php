@@ -3,6 +3,6 @@
 @section('title', 'Home Page')
 
 @section('content')
-@include('partials.hero')
-@include('partials.courses')
+@include('partials-web.hero')
+@include('partials-web.courses')
 @endsection
