@@ -18,7 +18,9 @@
                             <li><a href="tel:+21236547898"><i class="far fa-phone"></i>+2 123 654 7898</a></li>
                             <li><i class="far fa-map-marker-alt"></i>25/B Milford Road, New York</li>
                             <li><a href="/cdn-cgi/l/email-protection#a4cdcac2cbe4c1dcc5c9d4c8c18ac7cbc9"><i
-                                        class="far fa-envelope"></i><span class="__cf_email__" data-cfemail="b3daddd5dcf3d6cbd2dec3dfd69dd0dcde">[email&#160;protected]</span></a></li>
+                                        class="far fa-envelope"></i><span class="__cf_email__"
+                                        data-cfemail="b3daddd5dcf3d6cbd2dec3dfd69dd0dcde">[email&#160;protected]</span></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +75,8 @@
                 <div class="row">
                     <div class="col-md-6 align-self-center">
                         <p class="copyright-text">
-                            &copy; Copyright <span id="date"></span> <a href="#"> Eduka </a> All Rights Reserved.
+                            &copy; Copyright <span id="date"></span> <a href="#"> Eduka </a> All Rights
+                            Reserved.
                         </p>
                     </div>
                     <div class="col-md-6 align-self-center">
@@ -89,3 +92,4 @@
         </div>
     </div>
 </footer>
+

@@ -4,5 +4,5 @@
 
 @section('content')
 @include('partials-web.hero')
-@include('partials-web.courses')
+@include('partials-web.courses',['courses' => $courses])
 @endsection
